@@ -1,4 +1,12 @@
 <?php require_once("./inc/init.inc.php"); 
+//------------traitement php
+
+if(isset($_GET['action']) && $_GET['action'] =="deconnexion") {
+    session_destroy();
+}
+if (internauteEstConnecte()) {
+    header("location:profil.php");
+}
 
 if ($_POST) {
     $resultat = executeRequete("SELECT * FROM utilisateur WHERE pseudo= '$_POST[pseudo]'");
@@ -9,7 +17,7 @@ if ($_POST) {
             // traitement mdp
             foreach ($membre as $indice =>$element) {
                 if ($indice != 'mot_de_passe') {
-                    $_SESSION['membre'][$indice] = $element;
+                    $_SESSION['utilisateur'][$indice] = $element;
                 }
             }
             // $contenu .= '<div class="validation">Les identifiants correspondent</div>';
