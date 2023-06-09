@@ -13,6 +13,33 @@ footer {
     align-items: center;
     justify-content: center;
 }
+hr{
+    width: 99%;
+    border: 1px solid orange;
+}
+
+.lien_aa{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    border-bottom: 2px solid orange;
+}table {
+    border-collapse: collapse;
+    min-width: 1280px;
+    width: 92%;
+}
+table tr td {
+    text-align: center;
+}
+
+
+td,th {
+    padding: 5px;
+}
+table tr, 
+table tr,td {
+    border: 2px solid grey;
+}
 
 .erreur{
     background-color: red;
