@@ -1,9 +1,16 @@
-function toggleNav() {
-    let nav = document.querySelector("#myTopNav");
-    console.log(nav)
-    if (nav.className === "topnav") {
-        nav.className += " responsive";
+function previewImage() {
+    var preview = document.getElementById("preview");
+    var fileInput = document.getElementById("photo");
+    var file = fileInput.files[0];
+    var reader = new FileReader();
+  
+    reader.onloadend = function () {
+      preview.src = reader.result;
+    };
+  
+    if (file) {
+      reader.readAsDataURL(file);
     } else {
-        nav.className = "topnav";
+      preview.src = "";
     }
-}
+  }
