@@ -1,4 +1,6 @@
 <?php require_once("inc/init.inc.php");
+$title = " | Inscription";
+
 
 if ($_POST) {
 

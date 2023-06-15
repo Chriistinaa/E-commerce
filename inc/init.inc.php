@@ -1,4 +1,7 @@
 <?php
+ 
+// ------ TITRE PAGES
+$title = "";
 
 //* configuration phpdotenv
 require __DIR__ . '/../vendor/autoload.php';
