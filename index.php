@@ -1,5 +1,6 @@
 <?php
 require('./inc/init.inc.php');
+$title = " | Accueil";
 
 //TODO Pour le debug
 // var_dump(RACINE_SITE);

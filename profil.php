@@ -1,5 +1,7 @@
 <?php 
 require_once("./inc/init.inc.php"); 
+$title = " | Profil";
+
 
 if(!internauteEstConnecte()) header("location:connexion.php");
 
