@@ -28,15 +28,6 @@ if (isset($_GET['categorie'])) {
     }
 }
 
-// $tout_les_produits = executeRequete("SELECT * FROM produit");
-// while ($produit = $tout_les_produits->fetch_assoc()) {
-//     $contenu .= '<div class="boutique-produit">';
-//     $contenu .= "<h2>$produit[titre]</h2>";
-//     $contenu .= "<a href=\"fiche_produit.php?id_produit=$produit[id_produit]\"><img src=\"$produit[photo]\"></a>";
-//     $contenu .= "<p>$produit[prix] €</p>";
-//     $contenu .= '<a class="fiche" href="fiche_produit.php?id_produit=' . $produit['id_produit'] . '">Voir la fiche</a>';
-//     $contenu .= '</div>';
-// }
 
 
 // ------------------------ AFFICHAGE HTML -----------------------//
