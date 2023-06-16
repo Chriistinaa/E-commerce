@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Mon Site<?php echo htmlspecialchars($title); ?></title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="<?php echo RACINE_SITE ?>public/css/style.css">
     <script src="<?php echo RACINE_SITE ?>inc/js/main.js"></script>
-    <title>Mon Site<?php echo htmlspecialchars($title); ?></title>
+    
 </head>
 <body>
     <header>
